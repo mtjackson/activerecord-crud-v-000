@@ -22,7 +22,7 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create(attributes)
 end
 
-def can_be_created_in_a_block(args = { title: "Home Alone", release_date: 1990 })
+def can_be_created_in_a_block(args = { title: "Home Alone", release_date: 1990 }) #is this correct? I thought it should be able to take any hash of arguments
   Movie.create do |m|
     m.title = args[:title]
     m.release_date = args[:release_date]
