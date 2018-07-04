@@ -23,7 +23,7 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(args = attributes)
-  Movie.create do |m|
+  Movie.create do |attributes|
     m.title = ''
     m.release_date = ''
     m.director = ''
